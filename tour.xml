@@ -1,8 +1,8 @@
 ﻿<krpano version="1.21" title="Virtual Tour">
-	<include url="plugins/circle_hotspots.xml"/>
-	<include url="skin/vtourskin.xml" />
+<include url="plugins/circle_hotspots.xml"/>
+<include url="skin/vtourskin.xml" />
 	
-	<plugin name="soundinterface"
+<plugin name="soundinterface"
 			url="plugins/soundinterface.js"
 			preload="true"
 			rootpath=""
@@ -298,13 +298,13 @@
 				   y="100"
 				   width="200"
 				   height="50"
-				   bgcolor="0xFAF9F6"
+				   bgcolor="0x808080"
 				   bgalpha="1"
 				   roundedge="15"
 				   bgshadow="2"
 				   shadowcolor="0x000000"
 				   shadowalpha="0.4"
-				   css="font-family:'Montserrat', sans-serif; font-size:13px; font-weight:bold; color:#478D8D; text-align:center; line-height:50px;text-transform: uppercase;"
+				   css="font-family:'Montserrat', sans-serif; font-size:13px; font-weight:bold; color:#FFD700; text-align:center; line-height:50px;text-transform: uppercase;"
 				   onover="tween(scale, 1.1);"
 				   onout="tween(scale, 1.0);"
 				   onclick="hide_welcome_layer_natural();init_flags();toggle_music();"
@@ -786,7 +786,7 @@
 			<cube url="panos/ENTRANCE.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664,3200" />
 		</image>
 
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-0.903" atv="-2.017" linkedscene="scene_porch" linkedscene_lookat="0.39,7.47,120.0" linkedscene_hoffset="354.83" use3dtransition="true" />
+		<hotspot name="spot1" style="hs_circle" ath="-0.903" atv="-2.017" linkedscene="scene_porch" linkedscene_lookat="0.39,7.47,120.0" linkedscene_hoffset="354.83" use3dtransition="true" />
 		<hotspot name="spot2" style="skin_hotspotstyle" ath="-7.511" atv="-31.782" linkedscene="scene_dining_day" linkedscene_lookat="-6.8,16.39,120.0" linkedscene_hoffset="225.85" use3dtransition="true" />
 
 	</scene>
