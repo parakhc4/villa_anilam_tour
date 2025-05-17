@@ -43,35 +43,11 @@
 			);
 		);
 	</action>
-	<!-- Toggle Dropdown -->
-	<action name="toggle_dropdown_set_list">
-		<!-- Params:
-			 %1 = dropdown label layer (e.g., dropdown1)
-			 %2 = comma-separated list of layers to toggle (e.g., "btn1,btn2,sep1,sep2")
-		-->
-	
-		<!-- Extract the first button from list to check visibility -->
-		set(first_item, getarray(%2, 0));
-	
-		if(layer[get(first_item)].visible,
-			set(layer[%1].html, 'GROUND FLOOR ▼');
-	
-			for(set(i, 0), i LT calc(array.count(%2)), inc(i),
-				set(name, getarray(%2, i));
-				set(layer[get(name)].visible, false);
-			);
-		,
-			set(layer[%1].html, 'GROUND FLOOR ▲');
-	
-			for(set(i, 0), i LT calc(array.count(%2)), inc(i),
-				set(name, getarray(%2, i));
-				set(layer[get(name)].visible, true);
-			);
-		);
-	</action>
+
 
 	<action name="toggle_groundfloor_dropdown">
 		if(layer[dropdown1button1].visible,
+			<!-- Collapse GROUND FLOOR -->
 			set(layer[dropdown1].html, 'GROUND FLOOR ▼');
 			set(layer[dropdown1button1].visible, false);
 			set(layer[dropdown1button2].visible, false);
@@ -85,8 +61,21 @@
 			set(layer[dropdown1separator4].visible, false);
 			set(layer[dropdown1separator5].visible, false);
 			set(layer[dropdown1separator6].visible, false);
-			
+			set(layer[dropdown2].y, 270);
 		,
+			<!-- Collapse FIRST FLOOR if open -->
+			if(layer[dropdown2button1].visible,
+				set(layer[dropdown2].html, 'FIRST FLOOR ▼');
+				set(layer[dropdown2button1].visible, false);
+				set(layer[dropdown2button2].visible, false);
+				set(layer[dropdown2button3].visible, false);
+				set(layer[dropdown2button4].visible, false);
+				set(layer[dropdown2separator2].visible, false);
+				set(layer[dropdown2separator3].visible, false);
+				set(layer[dropdown2separator4].visible, false);
+			);
+			
+			<!-- Expand GROUND FLOOR -->
 			set(layer[dropdown1].html, 'GROUND FLOOR ▲');
 			set(layer[dropdown1button1].visible, true);
 			set(layer[dropdown1button2].visible, true);
@@ -100,10 +89,54 @@
 			set(layer[dropdown1separator4].visible, true);
 			set(layer[dropdown1separator5].visible, true);
 			set(layer[dropdown1separator6].visible, true);
+			set(layer[dropdown2].y, 570); <!-- Adjust based on actual height used -->
 		);
 	</action>
 	
 	
+	<action name="toggle_firstfloor_dropdown">
+		if(layer[dropdown2button1].visible,
+			<!-- Collapse FIRST FLOOR -->
+			set(layer[dropdown2].html, 'FIRST FLOOR ▼');
+			set(layer[dropdown2button1].visible, false);
+			set(layer[dropdown2button2].visible, false);
+			set(layer[dropdown2button3].visible, false);
+			set(layer[dropdown2button4].visible, false);
+			set(layer[dropdown2separator1].visible, false);
+			set(layer[dropdown2separator2].visible, false);
+			set(layer[dropdown2separator3].visible, false);
+			set(layer[dropdown2separator4].visible, false);
+			set(layer[dropdown2].y, 270);
+		,
+			<!-- Collapse GROUND FLOOR if open -->
+			if(layer[dropdown1button1].visible,
+				set(layer[dropdown1].html, 'GROUND FLOOR ▼');
+				set(layer[dropdown1button1].visible, false);
+				set(layer[dropdown1button2].visible, false);
+				set(layer[dropdown1button3].visible, false);
+				set(layer[dropdown1button4].visible, false);
+				set(layer[dropdown1button5].visible, false);
+				set(layer[dropdown1button6].visible, false);
+				set(layer[dropdown1separator1].visible, false);
+				set(layer[dropdown1separator2].visible, false);
+				set(layer[dropdown1separator3].visible, false);
+				set(layer[dropdown1separator4].visible, false);
+				set(layer[dropdown1separator5].visible, false);
+				set(layer[dropdown1separator6].visible, false);
+			);
+			
+			<!-- Expand FIRST FLOOR -->
+			set(layer[dropdown2].html, 'FIRST FLOOR ▲');
+			set(layer[dropdown2button1].visible, true);
+			set(layer[dropdown2button2].visible, true);
+			set(layer[dropdown2button3].visible, true);
+			set(layer[dropdown2button4].visible, true);
+			set(layer[dropdown2separator1].visible, true);
+			set(layer[dropdown2separator2].visible, true);
+			set(layer[dropdown2separator3].visible, true);
+			set(layer[dropdown2separator4].visible, true);
+		);
+	</action>
 	
 	
 </krpano>
