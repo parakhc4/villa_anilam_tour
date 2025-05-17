@@ -93,7 +93,7 @@
     
 	<action name="hs_anim_on">
 		<!-- Show hotspot tag -->
-			txtadd(hs_tag,%1,'_tag'); 
+			<!-- txtadd(hs_tag,%1,'_tag');  -->
 			tween(hotspot[get(hs_tag)].alpha,1,0.3);		
 			set(hotspot[get(hs_tag)].zorder, 999999);			
 	

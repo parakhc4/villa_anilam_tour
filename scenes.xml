@@ -1,0 +1,228 @@
+<krpano>    
+    <scene name="scene_ENTRANCE" title="ENTRANCE" onstart="" thumburl="panos/ENTRANCE.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+        
+        <control bouncinglimits="calc:image.cube ? true : false" />
+
+        <view hlookat="-1.628" vlookat="-19.235" fovtype="MFOV" fov="110.600" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+        <preview url="panos/ENTRANCE.tiles/preview.jpg" />
+
+        <image>
+            <cube url="panos/ENTRANCE.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664,3200" />
+        </image>
+
+        <hotspot name="spot1" style="hs_circle" ath="-0.903" atv="-2.017" linkedscene="scene_porch" linkedscene_lookat="0.39,7.47,120.0" linkedscene_hoffset="354.83" use3dtransition="true" />
+        <hotspot name="spot2" style="hs_circle" ath="-7.511" atv="-31.782" linkedscene="scene_dining_day" linkedscene_lookat="-6.8,16.39,120.0" linkedscene_hoffset="225.85" use3dtransition="true" />
+
+    </scene>
+    <scene name="scene_BAR" title="BAR" onstart="" thumburl="panos/BAR.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+            
+        <control bouncinglimits="calc:image.cube ? true : false" />
+
+        <view hlookat="-17.968" vlookat="35.714" fovtype="MFOV" fov="123.593" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+        <preview url="panos/BAR.tiles/preview.jpg" />
+
+        <image>
+            <cube url="panos/BAR.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664,3200" />
+        </image>
+
+        <hotspot name="spot1" style="hs_circle" ath="-113.102" atv="12.592" linkedscene="scene_kitchen" linkedscene_lookat="-77.83,18.29,106.1" />
+        <hotspot name="spot2" style="hs_circle" ath="95.759" atv="2.244" linkedscene="scene_room" linkedscene_lookat="218.09,10.43,116.97" />
+        <hotspot name="spot3" style="hs_circle" ath="113.363" atv="1.812" linkedscene="scene_powder_room" linkedscene_lookat="89.53,2.9,131.09" />
+        <hotspot name="spot4" style="hs_circle" ath="-170.902" atv="11.031" linkedscene="scene_porch" linkedscene_lookat="175.75,8.22,130.32" />
+
+    </scene>
+
+    <scene name="scene_DINING_DAY" title="DINING DAY" onstart="" thumburl="panos/DINING_DAY.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+        
+        <control bouncinglimits="calc:image.cube ? true : false" />
+
+        <view hlookat="-8.211" vlookat="29.264" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+        <preview url="panos/DINING_DAY.tiles/preview.jpg" />
+
+        <image>
+            <cube url="panos/DINING_DAY.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664,3200" />
+        </image>
+
+        <hotspot name="spot3" style="hs_circle" ath="38.340" atv="3.085" linkedscene="scene_entrance" linkedscene_lookat="-6.8,16.39,120.0" linkedscene_hoffset="134.15" use3dtransition="true" />
+        <hotspot name="spot1" style="hs_circle" ath="-73.506" atv="-3.873" linkedscene="scene_mini_kitchen" linkedscene_lookat="-13.44,15.54,113.7" linkedscene_hoffset="97.7" use3dtransition="true" />
+        <hotspot name="spot2" style="hs_circle" ath="-92.778" atv="-4.513" linkedscene="scene_room_" linkedscene_lookat="6.76,26.23,101.81" linkedscene_hoffset="360.63" use3dtransition="true" />
+
+    </scene>
+
+    <scene name="scene_DINING_NIGHT" title="DINING NIGHT" onstart="" thumburl="panos/DINING_NIGHT.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+        
+        <control bouncinglimits="calc:image.cube ? true : false" />
+
+        <view hlookat="-7.598" vlookat="27.910" fovtype="MFOV" fov="118.033" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+        <preview url="panos/DINING_NIGHT.tiles/preview.jpg" />
+
+        <image>
+            <cube url="panos/DINING_NIGHT.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664,3200" />
+        </image>
+
+    </scene>
+
+    <scene name="scene_KITCHEN" title="KITCHEN" onstart="" thumburl="panos/KITCHEN.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+        
+        <control bouncinglimits="calc:image.cube ? true : false" />
+
+        <view hlookat="-345.845" vlookat="17.569" fovtype="MFOV" fov="123.926" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+        <preview url="panos/KITCHEN.tiles/preview.jpg" />
+
+        <image>
+            <cube url="panos/KITCHEN.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664,3200" />
+        </image>
+
+        <hotspot name="spot2" style="hs_circle" ath="84.388" atv="9.095" linkedscene="scene_bar" linkedscene_lookat="-77.83,18.29,106.1" linkedscene_hoffset="-17.49" use3dtransition="true" />
+        <hotspot name="spot1" style="hs_circle" ath="128.469" atv="-2.915" linkedscene="scene_living_area" linkedscene_lookat="69.9,13.59,91.66" />
+
+        
+        
+
+    </scene>
+
+    <scene name="scene_LIVING_AREA" title="LIVING AREA" onstart="" thumburl="panos/LIVING_AREA.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+        
+        <control bouncinglimits="calc:image.cube ? true : false" />
+
+        <view hlookat="-2.750" vlookat="-5.348" fovtype="MFOV" fov="110.604" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+        <preview url="panos/LIVING_AREA.tiles/preview.jpg" />
+
+        <image>
+            <cube url="panos/LIVING_AREA.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664,3200" />
+        </image>
+
+        
+        <hotspot name="spot2" style="hs_circle" ath="81.455" atv="-3.747" linkedscene="scene_powder_room" linkedscene_lookat="-240.39,10.55,121.47" linkedscene_hoffset="-21.32" use3dtransition="true" />
+        <hotspot name="spot3" style="hs_circle" ath="-162.375" atv="-1.491" linkedscene="scene_porch" linkedscene_lookat="48.24,26.26,110.6" />
+        
+        <hotspot name="spot1" style="hs_circle" ath="-122.149" atv="4.724" linkedscene="scene_kitchen" linkedscene_lookat="-70.4,17.43,111.16" linkedscene_hoffset="429.91" use3dtransition="true" />
+        <hotspot name="spot4" style="hs_circle" ath="55.629" atv="-3.762" linkedscene="scene_room" linkedscene_lookat="217.5,10.17,116.97" linkedscene_hoffset="299.76" use3dtransition="true" />
+        <hotspot name="spot5" style="hs_circle" ath="-79.465" atv="9.382" linkedscene="scene_bar" linkedscene_lookat="-16.93,28.29,106.86" />
+
+    </scene>
+
+    <scene name="scene_MINI_KITCHEN" title="MINI KITCHEN" onstart="" thumburl="panos/MINI_KITCHEN.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+        
+        <control bouncinglimits="calc:image.cube ? true : false" />
+
+        <view hlookat="-23.415" vlookat="16.875" fovtype="MFOV" fov="110.581" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+        <preview url="panos/MINI_KITCHEN.tiles/preview.jpg" />
+
+        <image>
+            <cube url="panos/MINI_KITCHEN.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664,3200" />
+        </image>
+
+        <hotspot name="spot2" style="hs_circle" ath="-155.803" atv="-0.207" linkedscene="scene_dining_day" linkedscene_lookat="-13.44,15.54,113.7" linkedscene_hoffset="262.3" use3dtransition="true" />
+
+    </scene>
+
+    <scene name="scene_PORCH" title="PORCH" onstart="" thumburl="panos/PORCH.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+        
+        <control bouncinglimits="calc:image.cube ? true : false" />
+
+        <view hlookat="3.889" vlookat="15.511" fovtype="MFOV" fov="110.600" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+        <preview url="panos/PORCH.tiles/preview.jpg" />
+
+        <image>
+            <cube url="panos/PORCH.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664,3200" />
+        </image>
+
+        <hotspot name="spot2" style="hs_circle" ath="173.924" atv="10.283" linkedscene="scene_entrance" linkedscene_lookat="0.39,7.47,120.0" linkedscene_hoffset="5.17" use3dtransition="true" />
+        <hotspot name="spot1" style="hs_circle" ath="1.232" atv="0.597" linkedscene="scene_living_area" linkedscene_lookat="48.24,26.26,110.6" linkedscene_hoffset="16.39" use3dtransition="true" />
+
+    </scene>
+
+    <scene name="scene_POWDER_ROOM" title="POWDER ROOM" onstart="" thumburl="panos/POWDER_ROOM.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+        
+        <control bouncinglimits="calc:image.cube ? true : false" />
+
+        <view hlookat="115.480" vlookat="21.197" fovtype="MFOV" fov="140.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+        <preview url="panos/POWDER_ROOM.tiles/preview.jpg" />
+
+        <image>
+            <cube url="panos/POWDER_ROOM.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664,3200" />
+        </image>
+
+        <hotspot name="spot3" style="hs_circle" ath="-113.331" atv="-6.063" linkedscene="scene_living_area" linkedscene_lookat="-240.39,10.55,121.47" linkedscene_hoffset="381.32" use3dtransition="true" />
+
+    </scene>
+
+    <scene name="scene_ROOM_" title="ROOM." onstart="" thumburl="panos/ROOM_.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+        
+        <control bouncinglimits="calc:image.cube ? true : false" />
+
+        <view hlookat="-21.158" vlookat="34.748" fovtype="MFOV" fov="123.872" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+        <preview url="panos/ROOM_.tiles/preview.jpg" />
+
+        <image>
+            <cube url="panos/ROOM_.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664,3200" />
+        </image>
+
+        <hotspot name="spot4" style="hs_circle" ath="87.855" atv="-3.057" linkedscene="scene_dining_day" linkedscene_lookat="6.76,26.23,101.81" linkedscene_hoffset="-0.63" use3dtransition="true" />
+        <hotspot name="spot1" style="hs_circle" ath="11.495" atv="-4.495" linkedscene="scene_washroom_" linkedscene_lookat="-6.15,23.54,112.22" />
+
+    </scene>
+
+    <scene name="scene_ROOM" title="ROOM" onstart="" thumburl="panos/ROOM.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+        
+        <control bouncinglimits="calc:image.cube ? true : false" />
+
+        <view hlookat="217.699" vlookat="0.627" fovtype="MFOV" fov="116.975" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+        <preview url="panos/ROOM.tiles/preview.jpg" />
+
+        <image>
+            <cube url="panos/ROOM.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664,3200" />
+        </image>
+
+        <hotspot name="spot1" style="hs_circle" ath="154.817" atv="-4.051" linkedscene="scene_washroom" linkedscene_lookat="-289.2,6.38,120.0" />
+        <hotspot name="spot5" style="hs_circle" ath="175.394" atv="-3.497" linkedscene="scene_living_area" linkedscene_lookat="217.5,10.17,116.97" linkedscene_hoffset="60.24" use3dtransition="true" />
+        
+        
+        
+
+    </scene>
+
+    <scene name="scene_WASHROOM_" title="WASHROOM." onstart="" thumburl="panos/WASHROOM_.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+        
+        <control bouncinglimits="calc:image.cube ? true : false" />
+
+        <view hlookat="-6.868" vlookat="35.767" fovtype="MFOV" fov="132.873" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+        <preview url="panos/WASHROOM_.tiles/preview.jpg" />
+
+        <image>
+            <cube url="panos/WASHROOM_.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664,3200" />
+        </image>
+
+        <hotspot name="spot2" style="hs_circle" ath="-105.541" atv="3.248" linkedscene="scene_room_" linkedscene_lookat="-6.15,23.54,112.22" linkedscene_hoffset="297.04" use3dtransition="true" />
+
+    </scene>
+
+    <scene name="scene_WASHROOM" title="WASHROOM" onstart="" thumburl="panos/WASHROOM.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+        
+        <control bouncinglimits="calc:image.cube ? true : false" />
+
+        <view hlookat="-294.162" vlookat="-0.287" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+        <preview url="panos/WASHROOM.tiles/preview.jpg" />
+
+        <image>
+            <cube url="panos/WASHROOM.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664,3200" />
+        </image>
+
+        <hotspot name="spot3" style="hs_circle" ath="-33.197" atv="-3.065" linkedscene="scene_room" linkedscene_lookat="-289.2,6.38,120.0" linkedscene_hoffset="368.01" use3dtransition="true" />
+
+    </scene>
+</krpano>
