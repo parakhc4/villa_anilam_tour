@@ -167,7 +167,7 @@
 			set(layer[dropdown2separator4].visible, true);
 		);
 	</action>
-
+	
 
 	
 </krpano>

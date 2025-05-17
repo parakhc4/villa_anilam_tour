@@ -90,17 +90,33 @@
 
         <!-- Day Night -->
         <layer name="daynight_button"
-        url="%SWFPATH%/skin/dayandnight.png"
-        width="60"
-        height="60"
-        align="bottomcenter"  
-        y="4%"             
-        onclick="switch_daynight();"
-        visible="false"
-        keep="true"
-        zorder="2000"
-        onover="tween(scale, 1.1, 0.2, easeOutCubic);"
-        onout="tween(scale, 1.0, 0.2, easeOutCubic);" />
+                url="%SWFPATH%/skin/dayandnight.png"
+                width="60"
+                height="60"
+                align="bottomcenter"  
+                y="4%"             
+                onclick="switch_daynight();"
+                visible="false"
+                keep="true"
+                zorder="2000"
+                onover="tween(scale, 1.1, 0.2, easeOutCubic);"
+                onout="tween(scale, 1.0, 0.2, easeOutCubic);" />
+
+        <layer name="scene_title_display"
+            type="text"
+            align="bottomcenter"
+            y="3%" 
+            html=""
+            css="font-family: 'Montserrat', sans-serif; font-size:14px; font-weight:500; color:#FFFFFF; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);text-transform: uppercase; border-bottom: 1px solid #FFFFFF; display:inline-block;"
+            width="auto"
+            padding="0"
+            background="false"
+            bgalpha="0"
+            border="none"
+            keep="true"
+            enabled="false"
+            visible="true"
+            zorder="2000" />
 
 
         <!-- Sidebar -->
@@ -298,7 +314,7 @@
                         bgalpha="0"
                         border="none"
                         css="font-family: 'Montserrat', sans-serif; font-size:16px; font-weight:400; color:#FAF9F6;"
-                        onclick="loadscene(scene_LIVING_AREA, null, MERGE); set(layer[scene_title_display].html, 'BANQUET HALL'); set(layer[scene_title_display].visible, true);toggle_sidebar();"
+                        onclick="loadscene(scene_LIVING_AREA, null, MERGE); set(layer[scene_title_display].html, 'HALL'); set(layer[scene_title_display].visible, true);toggle_sidebar();"
                         onhover="set(layer[dropdown1button1].css, 'font-family: Montserrat, sans-serif; font-size:16px; font-weight:400; color:#000000');"
                         onout="set(layer[dropdown1button1].css, 'font-family: Montserrat, sans-serif; font-size:16px; font-weight:400; color:#FAF9F6');"
                         visible="false"
