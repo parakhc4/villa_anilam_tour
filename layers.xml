@@ -57,7 +57,10 @@
         keep="true"
         handcursor="false"
         zorder="999" />
+    
 
+    <!-- The BIG 3 : Music, Menu and DayNight -->
+    <!-- Menu Button -->
     <layer name="menu_button"
 		url="%SWFPATH%/skin/button_toggle.png"
         align="midleft"
@@ -70,6 +73,35 @@
         onover="tween(scale, 1.1, 0.2, easeOutCubic);"
         onout="tween(scale, 1.0, 0.2, easeOutCubic);" 
         onclick="toggle_sidebar();"/>
+
+        <!-- Music Button -->
+        <layer name="music_toggle_button"
+        url="%SWFPATH%/skin/soundonoff.png"
+        width="40"
+        height="40"
+        align="midright"         
+        onclick="toggle_music();"
+        visible="true"
+        keep="true"
+        zorder="2000"
+        onover="tween(scale, 1.1, 0.2, easeOutCubic);"
+        onout="tween(scale, 1.0, 0.2, easeOutCubic);"  />
+
+
+        <!-- Day Night -->
+        <layer name="daynight_button"
+        url="%SWFPATH%/skin/dayandnight.png"
+        width="60"
+        height="60"
+        align="bottomcenter"  
+        y="4%"             
+        onclick="switch_daynight();"
+        visible="false"
+        keep="true"
+        zorder="2000"
+        onover="tween(scale, 1.1, 0.2, easeOutCubic);"
+        onout="tween(scale, 1.0, 0.2, easeOutCubic);" />
+
 
         <!-- Sidebar -->
     <layer name="sidebar"
@@ -86,6 +118,73 @@
         zorder="2001"
         padding="5">
     <!-- Logo on top of sidebar -->
+
+    <!-- Social Media Icons -->
+    <layer name="social_media_container"
+    parent="sidebar"
+    type="container"
+    align="leftbottom"
+    x="15"
+    y="15"
+    width="220"
+    height="50"
+    keep="true"
+    zorder="1001">
+
+            <layer name="instagram_icon"
+                parent="social_media_container"
+                url="%SWFPATH%/skin/social/instagram.png"
+                width="40"
+                height="40"
+                align="left"
+                x="12%"
+                y="6%"
+                handcursor="true"
+                onclick="openurl('https://www.instagram.com/thepeace_house',_blank);"
+                onover="tween(scale, 1.2);"
+                onout="tween(scale, 1.0);" />
+
+            <layer name="whatsapp_icon"
+                parent="social_media_container"
+                url="%SWFPATH%/skin/social/whatsapp.png"
+                width="40"
+                height="40"
+                align="left"
+                x="30%"
+                y="0"
+                handcursor="true"
+                onclick="openurl('https://wa.me/919887601786', '_blank');"
+                onover="tween(scale, 1.2);"
+                onout="tween(scale, 1.0);" />
+
+            <layer name="gmaps_icon"
+                parent="social_media_container"
+                url="%SWFPATH%/skin/social/gmaps.png"
+                width="40"
+                height="40"
+                align="left"
+                x="54%"
+                y="0"
+                handcursor="true"
+                onclick="openurl('https://www.airbnb.co.in/rooms/1298211663863256368',_blank);"
+                onover="tween(scale, 1.2);"
+                onout="tween(scale, 1.0);" />
+            </layer>
+
+            <layer name="airbnb_icon"
+                parent="social_media_container"
+                url="%SWFPATH%/skin/social/airbnb.png"
+                width="40"
+                height="40"
+                align="left"
+                x="78%"
+                y="0"
+                handcursor="true"
+                onclick="openurl(' https://www.airbnb.co.in/rooms/1298211663863256368',_blank);"
+                onover="tween(scale, 1.2);"
+                onout="tween(scale, 1.0);" />
+
+
         <layer name="sidebar_logo"
             parent="sidebar"
             url="%SWFPATH%/skin/logoabovesidebar_white.png"
@@ -561,8 +660,6 @@
                         zorder="1001" />
 
 
-                
-                
 
     </layer>
         

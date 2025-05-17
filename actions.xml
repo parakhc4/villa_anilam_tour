@@ -1,4 +1,16 @@
 <krpano>
+
+	<!-- HARDCODED -->
+	<action name="switch_daynight">
+		copy(current_scene, scene[get(xml.scene)].name);
+		if(current_scene == 'scene_dining_day',
+			loadscene(scene_dining_night, null, MERGE);
+		,
+		if(current_scene == 'scene_dining_night',
+			loadscene(scene_dining_day, null, MERGE);
+		));
+	</action>
+	
 	<action name="silence_errors">
 		set(showerrors, false);
 		set(debugmode, false);
@@ -16,6 +28,24 @@
 	<action name="preload_music">
 		js('var audio = new Audio("%SWFPATH%/music/background.mp3"); audio.load();');
 	</action>
+	<action name="toggle_music">
+		if(!music_is_playing,
+			playsound(bgsnd, '%SWFPATH%/music/background.mp3', 0, 0.5);
+			set(music_is_playing, true);
+		,
+			pausesound('bgsnd');
+			set(music_is_playing, false);
+		);
+	</action>
+
+	<action name="pause_bg_music">
+		js('soundinterface.pausesound("bgsnd");');
+	</action>
+	<action name="play_bg_music">
+		js('soundinterface.playsound("bgsnd", "%SWFPATH%/music/background.mp3", 0, 0.5);');
+	</action>
+
+
 	<!-- When Clicking Enter button, make it dissapear -->
 	<action name="hide_welcome_layer_natural">
 		tween(layer[welcome_layer].alpha, 0, 0.5, easeOutSine,
@@ -137,6 +167,7 @@
 			set(layer[dropdown2separator4].visible, true);
 		);
 	</action>
-	
+
+
 	
 </krpano>

@@ -1,4 +1,11 @@
 ﻿<krpano version="1.21" title="Virtual Tour">
+	<!-- Plugins -->
+	<plugin name="soundinterface"
+		url="plugins/soundinterface.js"
+		preload="true"
+		rootpath=""
+		keep="true" />
+	
 	<!-- Imports -->
 	<include url="skin/settings.xml" />
 	<include url="skin/vtourskin.xml" />

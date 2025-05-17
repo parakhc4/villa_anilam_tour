@@ -34,7 +34,7 @@
 
     </scene>
 
-    <scene name="scene_DINING_DAY" title="DINING DAY" onstart="" thumburl="panos/DINING_DAY.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+    <scene name="scene_DINING_DAY" title="DINING DAY" onstart="set(layer[daynight_button].visible, true)" thumburl="panos/DINING_DAY.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
         
         <control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -52,7 +52,7 @@
 
     </scene>
 
-    <scene name="scene_DINING_NIGHT" title="DINING NIGHT" onstart="" thumburl="panos/DINING_NIGHT.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+    <scene name="scene_DINING_NIGHT" title="DINING NIGHT" onstart="set(layer[daynight_button].visible, true)" thumburl="panos/DINING_NIGHT.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
         
         <control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -63,6 +63,10 @@
         <image>
             <cube url="panos/DINING_NIGHT.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,768,1664,3200" />
         </image>
+
+        <hotspot name="spot3" style="hs_circle" ath="38.340" atv="3.085" linkedscene="scene_entrance" linkedscene_lookat="-6.8,16.39,120.0" linkedscene_hoffset="134.15" use3dtransition="true" />
+        <hotspot name="spot1" style="hs_circle" ath="-73.506" atv="-3.873" linkedscene="scene_mini_kitchen" linkedscene_lookat="-13.44,15.54,113.7" linkedscene_hoffset="97.7" use3dtransition="true" />
+        <hotspot name="spot2" style="hs_circle" ath="-92.778" atv="-4.513" linkedscene="scene_room_" linkedscene_lookat="6.76,26.23,101.81" linkedscene_hoffset="360.63" use3dtransition="true" />
 
     </scene>
 
