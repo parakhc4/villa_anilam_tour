@@ -5,7 +5,9 @@
 		preload="true"
 		rootpath=""
 		keep="true" />
-	
+		
+	<!--Events  -->
+	<events name="krpanoReady" onstart="start_autorotate();" />
 	<!-- Imports -->
 	<include url="skin/settings.xml" />
 	<include url="skin/vtourskin.xml" />

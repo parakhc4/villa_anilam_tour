@@ -167,6 +167,20 @@
 			set(layer[dropdown2separator4].visible, true);
 		);
 	</action>
+
+	<action name="start_autorotate">
+		set(autorotate.enabled, true);
+		set(autorotate.speed, 0.8);      <!-- adjust speed -->
+		set(autorotate.waittime, 0);      <!-- no wait, start immediately -->
+		set(autorotate.loop, true);
+		autorotate_start();
+	</action>
+
+	<action name="stop_autorotate">
+		set(autorotate.enabled, false);
+		autorotate_stop();
+	</action>
+	
 	
 
 	

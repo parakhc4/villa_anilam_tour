@@ -43,7 +43,7 @@
         css="font-family:'Montserrat', sans-serif; font-size:18px; font-weight:bold; color:white; text-align:center; line-height:50px;text-transform: uppercase;"
         onover="tween(scale, 1.1);"
         onout="tween(scale, 1.0);"
-        onclick="hide_welcome_layer_natural();init_flags();toggle_music();"
+        onclick="hide_welcome_layer_natural();init_flags();toggle_music();stop_autorotate();"
         keep="true"
         zorder="99999" />
         <!-- Logo on top of screen -->
