@@ -76,17 +76,30 @@
 			set(layer[dropdown1button1].visible, false);
 			set(layer[dropdown1button2].visible, false);
 			set(layer[dropdown1button3].visible, false);
-			set(layer[separator3].visible, false);
-			set(layer[separator4].visible, false);
-			set(layer[separator5].visible, false);
+			set(layer[dropdown1button4].visible, false);
+			set(layer[dropdown1button5].visible, false);
+			set(layer[dropdown1button6].visible, false);
+			set(layer[dropdown1separator1].visible, false);
+			set(layer[dropdown1separator2].visible, false);
+			set(layer[dropdown1separator3].visible, false);
+			set(layer[dropdown1separator4].visible, false);
+			set(layer[dropdown1separator5].visible, false);
+			set(layer[dropdown1separator6].visible, false);
+			
 		,
 			set(layer[dropdown1].html, 'GROUND FLOOR ▲');
 			set(layer[dropdown1button1].visible, true);
 			set(layer[dropdown1button2].visible, true);
 			set(layer[dropdown1button3].visible, true);
-			set(layer[separator3].visible, true);
-			set(layer[separator4].visible, true);
-			set(layer[separator5].visible, true);
+			set(layer[dropdown1button4].visible, true);
+			set(layer[dropdown1button5].visible, true);
+			set(layer[dropdown1button6].visible, true);
+			set(layer[dropdown1separator1].visible, true);
+			set(layer[dropdown1separator2].visible, true);
+			set(layer[dropdown1separator3].visible, true);
+			set(layer[dropdown1separator4].visible, true);
+			set(layer[dropdown1separator5].visible, true);
+			set(layer[dropdown1separator6].visible, true);
 		);
 	</action>
 	

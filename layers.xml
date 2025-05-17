@@ -170,7 +170,7 @@
                 keep="true"
                 zorder="1001"
 		        />
-                    <layer name="separator3"
+                    <layer name="dropdown1separator1"
                         parent="sidebar"
                         type="container"
                         align="lefttop"
@@ -185,7 +185,7 @@
                         zorder="1000" />
 
                         <!-- ALL BUTTONS BELOW DROPDOWN 1 -->
-                <layer name="dropdown1button1"
+                    <layer name="dropdown1button1"
                         parent="sidebar"
                         type="text"
                         html="HALL"
@@ -205,7 +205,7 @@
                         keep="true"
                         zorder="1001" />
 
-                <layer name="separator4"
+                <layer name="dropdown1separator2"
                         parent="sidebar"
                         type="container"
                         align="lefttop"
@@ -239,7 +239,7 @@
                         keep="true"
                         zorder="1001" />
 
-                <layer name="separator5"
+                <layer name="dropdown1separator3"
                         parent="sidebar"
                         type="container"
                         align="lefttop"
@@ -272,7 +272,296 @@
                         visible="false"
                         keep="true"
                         zorder="1001" />
-                        
+
+
+                 <layer name="dropdown1separator4"
+                        parent="sidebar"
+                        type="container"
+                        align="lefttop"
+                        x="15"
+                        y="410"
+                        width="220"
+                        height="1"
+                        bgcolor="0xFFFFFF"
+                        bgalpha="0.3"
+                        visible="false"
+                        keep="true"
+                        zorder="1000" />
+
+                <layer name="dropdown1button4"
+                        parent="sidebar"
+                        type="text"
+                        html="POWDER ROOM"
+                        width="180"
+                        height="40"
+                        align="lefttop"
+                        x="30"
+                        y="420"
+                        background="false"
+                        bgalpha="0"
+                        border="none"
+                        css="font-family: 'Montserrat', sans-serif; font-size:16px; font-weight:400; color:#FAF9F6;"
+                        onclick="loadscene(scene_POWDER_ROOM, null, MERGE); set(layer[scene_title_display].html, 'POWDER ROOM'); set(layer[scene_title_display].visible, true);toggle_sidebar();"
+                        onhover="set(layer[dropdown1button4].css, 'font-family: Montserrat, sans-serif; font-size:16px; font-weight:400; color:#000000');"
+                        onout="set(layer[dropdown1button4].css, 'font-family: Montserrat, sans-serif; font-size:16px; font-weight:400; color:#FAF9F6');"
+                        visible="false"
+                        keep="true"
+                        zorder="1001" />
+
+                    <layer name="dropdown1separator5"
+                        parent="sidebar"
+                        type="container"
+                        align="lefttop"
+                        x="15"
+                        y="460"
+                        width="220"
+                        height="1"
+                        bgcolor="0xFFFFFF"
+                        bgalpha="0.3"
+                        visible="false"
+                        keep="true"
+                        zorder="1000" />
+
+                <layer name="dropdown1button5"
+                        parent="sidebar"
+                        type="text"
+                        html="ROOM"
+                        width="180"
+                        height="40"
+                        align="lefttop"
+                        x="30"
+                        y="470"
+                        background="false"
+                        bgalpha="0"
+                        border="none"
+                        css="font-family: 'Montserrat', sans-serif; font-size:16px; font-weight:400; color:#FAF9F6;"
+                        onclick="loadscene(scene_ROOM, null, MERGE); set(layer[scene_title_display].html, 'ROOM'); set(layer[scene_title_display].visible, true);toggle_sidebar();"
+                        onhover="set(layer[dropdown1button5].css, 'font-family: Montserrat, sans-serif; font-size:16px; font-weight:400; color:#000000');"
+                        onout="set(layer[dropdown1button5].css, 'font-family: Montserrat, sans-serif; font-size:16px; font-weight:400; color:#FAF9F6');"
+                        visible="false"
+                        keep="true"
+                        zorder="1001" />
+
+                <layer name="dropdown1separator6"
+                        parent="sidebar"
+                        type="container"
+                        align="lefttop"
+                        x="15"
+                        y="510"
+                        width="220"
+                        height="1"
+                        bgcolor="0xFFFFFF"
+                        bgalpha="0.3"
+                        visible="false"
+                        keep="true"
+                        zorder="1000" />
+
+                <layer name="dropdown1button6"
+                        parent="sidebar"
+                        type="text"
+                        html="WASHROOM"
+                        width="180"
+                        height="40"
+                        align="lefttop"
+                        x="30"
+                        y="520"
+                        background="false"
+                        bgalpha="0"
+                        border="none"
+                        css="font-family: 'Montserrat', sans-serif; font-size:16px; font-weight:400; color:#FAF9F6;"
+                        onclick="loadscene(scene_WASHROOM, null, MERGE); set(layer[scene_title_display].html, 'WASHROOM'); set(layer[scene_title_display].visible, true);toggle_sidebar();"
+                        onhover="set(layer[dropdown1button6].css, 'font-family: Montserrat, sans-serif; font-size:16px; font-weight:400; color:#000000');"
+                        onout="set(layer[dropdown1button6].css, 'font-family: Montserrat, sans-serif; font-size:16px; font-weight:400; color:#FAF9F6');"
+                        visible="false"
+                        keep="true"
+                        zorder="1001" />
+
+                    
+
+
+
+
+
+
+
+
+
+                <!-- Second Separator -->
+                <layer name="separator3"
+                parent="sidebar"
+                type="container"
+                align="lefttop"
+                x="15"
+                y="260"
+                width="220"
+                height="1"
+                bgcolor="0xFFFFFF"
+                bgalpha="0.3"
+                keep="true"
+                zorder="1000" />
+            
+            <!-- Second button, First Dropdown -->
+            <layer name="dropdown2"
+                parent="sidebar"
+                type="text"
+                html="FIRST FLOOR ▼"
+                width="180"
+                height="40"
+                align="lefttop"
+                x="15"
+                y="270"
+                background="false"
+                bgalpha="0"
+                border="none"
+                css="font-family: 'Montserrat', sans-serif; font-size:16px; font-weight:400; color:#FAF9F6;"
+
+                onclick = "toggle_groundfloor_dropdown();"
+                onhover="set(layer[dropdown2].css, 'font-family: Montserrat, sans-serif; font-size:16px; font-weight:400; color:#000000');"
+                onout="set(layer[dropdown2].css, 'font-family: Montserrat, sans-serif; font-size:16px; font-weight:400; color:#FAF9F6');"
+                visible="true"
+                keep="true"
+                zorder="1002"
+		        />
+                    <layer name="dropdown1separator1"
+                        parent="sidebar"
+                        type="container"
+                        align="lefttop"
+                        x="15"
+                        y="260"
+                        width="220"
+                        height="1"
+                        bgcolor="0xFFFFFF"
+                        bgalpha="0.3"
+                        keep="true"
+                        visible="false"
+                        zorder="1000" />
+
+                        <!-- ALL BUTTONS BELOW DROPDOWN 1 -->
+                    <layer name="dropdown2button1"
+                        parent="sidebar"
+                        type="text"
+                        html="DINING"
+                        width="180"
+                        height="40"
+                        align="lefttop"
+                        x="30"
+                        y="270"
+                        background="false"
+                        bgalpha="0"
+                        border="none"
+                        css="font-family: 'Montserrat', sans-serif; font-size:16px; font-weight:400; color:#FAF9F6;"
+                        onclick="loadscene(scene_DINING_DAY, null, MERGE); set(layer[scene_title_display].html, 'DINING'); set(layer[scene_title_display].visible, true);toggle_sidebar();"
+                        onhover="set(layer[dropdown2button1].css, 'font-family: Montserrat, sans-serif; font-size:16px; font-weight:400; color:#000000');"
+                        onout="set(layer[dropdown2button1].css, 'font-family: Montserrat, sans-serif; font-size:16px; font-weight:400; color:#FAF9F6');"
+                        visible="false"
+                        keep="true"
+                        zorder="1001" />
+
+                <layer name="dropdown2separator2"
+                        parent="sidebar"
+                        type="container"
+                        align="lefttop"
+                        x="15"
+                        y="310"
+                        width="220"
+                        height="1"
+                        bgcolor="0xFFFFFF"
+                        bgalpha="0.3"
+                        keep="true"
+                        visible="false"
+                        zorder="1000" />
+
+                 <layer name="dropdown2button2"
+                        parent="sidebar"
+                        type="text"
+                        html="MINI KITCHEN"
+                        width="180"
+                        height="40"
+                        align="lefttop"
+                        x="30"
+                        y="320"
+                        background="false"
+                        bgalpha="0"
+                        border="none"
+                        css="font-family: 'Montserrat', sans-serif; font-size:16px; font-weight:400; color:#FAF9F6;"
+                        onclick="loadscene(scene_MINI_KITCHEN, null, MERGE); set(layer[scene_title_display].html, 'MINI KITCHEN'); set(layer[scene_title_display].visible, true);toggle_sidebar();"
+                        onhover="set(layer[dropdown2button2].css, 'font-family: Montserrat, sans-serif; font-size:16px; font-weight:400; color:#000000');"
+                        onout="set(layer[dropdown2button2].css, 'font-family: Montserrat, sans-serif; font-size:16px; font-weight:400; color:#FAF9F6');"
+                        visible="false"
+                        keep="true"
+                        zorder="1001" />
+
+                <layer name="dropdown2separator3"
+                        parent="sidebar"
+                        type="container"
+                        align="lefttop"
+                        x="15"
+                        y="360"
+                        width="220"
+                        height="1"
+                        bgcolor="0xFFFFFF"
+                        bgalpha="0.3"
+                        visible="false"
+                        keep="true"
+                        zorder="1000" />
+
+                <layer name="dropdown2button3"
+                        parent="sidebar"
+                        type="text"
+                        html="ROOM"
+                        width="180"
+                        height="40"
+                        align="lefttop"
+                        x="30"
+                        y="370"
+                        background="false"
+                        bgalpha="0"
+                        border="none"
+                        css="font-family: 'Montserrat', sans-serif; font-size:16px; font-weight:400; color:#FAF9F6;"
+                        onclick="loadscene(scene_ROOM, null, MERGE); set(layer[scene_title_display].html, 'ROOM'); set(layer[scene_title_display].visible, true);toggle_sidebar();"
+                        onhover="set(layer[dropdown2button3].css, 'font-family: Montserrat, sans-serif; font-size:16px; font-weight:400; color:#000000');"
+                        onout="set(layer[dropdown2button3].css, 'font-family: Montserrat, sans-serif; font-size:16px; font-weight:400; color:#FAF9F6');"
+                        visible="false"
+                        keep="true"
+                        zorder="1001" />
+
+
+                 <layer name="dropdown2separator4"
+                        parent="sidebar"
+                        type="container"
+                        align="lefttop"
+                        x="15"
+                        y="410"
+                        width="220"
+                        height="1"
+                        bgcolor="0xFFFFFF"
+                        bgalpha="0.3"
+                        visible="false"
+                        keep="true"
+                        zorder="1000" />
+
+                <layer name="dropdown2button4"
+                        parent="sidebar"
+                        type="text"
+                        html="WASHROOM"
+                        width="180"
+                        height="40"
+                        align="lefttop"
+                        x="30"
+                        y="420"
+                        background="false"
+                        bgalpha="0"
+                        border="none"
+                        css="font-family: 'Montserrat', sans-serif; font-size:16px; font-weight:400; color:#FAF9F6;"
+                        onclick="loadscene(scene_WASHROOM, null, MERGE); set(layer[scene_title_display].html, 'WASHROOM'); set(layer[scene_title_display].visible, true);toggle_sidebar();"
+                        onhover="set(layer[dropdown2button4].css, 'font-family: Montserrat, sans-serif; font-size:16px; font-weight:400; color:#000000');"
+                        onout="set(layer[dropdown2button4].css, 'font-family: Montserrat, sans-serif; font-size:16px; font-weight:400; color:#FAF9F6');"
+                        visible="false"
+                        keep="true"
+                        zorder="1001" />
+
+
+                
                 
 
     </layer>
