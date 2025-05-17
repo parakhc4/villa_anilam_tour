@@ -15,7 +15,7 @@
         <hotspot name="spot2" style="hs_circle" ath="-7.511" atv="-31.782" linkedscene="scene_dining_day" linkedscene_lookat="-6.8,16.39,120.0" linkedscene_hoffset="225.85" use3dtransition="true" />
 
     </scene>
-    <scene name="scene_BAR" title="BAR" onstart="set(layer[scene_title_display].html, get(scene[get(xml.scene)].title));" thumburl="panos/BAR.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+    <scene name="scene_BAR" title="BAR" onstart="start_autorotate_custom(3);set(layer[scene_title_display].html, get(scene[get(xml.scene)].title));" thumburl="panos/BAR.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
             
         <control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -34,7 +34,7 @@
 
     </scene>
 
-    <scene name="scene_DINING_DAY" title="DINING" onstart="set(layer[daynight_button].visible, true)" thumburl="panos/DINING_DAY.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+    <scene name="scene_DINING_DAY" title="DINING" onstart="start_autorotate_custom(3);set(layer[daynight_button].visible, true)" thumburl="panos/DINING_DAY.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
         
         <control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -52,7 +52,7 @@
 
     </scene>
 
-    <scene name="scene_DINING_NIGHT" title="DINING" onstart="set(layer[daynight_button].visible, true)" thumburl="panos/DINING_NIGHT.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+    <scene name="scene_DINING_NIGHT" title="DINING" onstart="start_autorotate_custom(3);set(layer[daynight_button].visible, true)" thumburl="panos/DINING_NIGHT.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
         
         <control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -70,7 +70,7 @@
 
     </scene>
 
-    <scene name="scene_KITCHEN" title="KITCHEN" onstart="set(layer[scene_title_display].html, get(scene[get(xml.scene)].title));" thumburl="panos/KITCHEN.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+    <scene name="scene_KITCHEN" title="KITCHEN" onstart="start_autorotate_custom(3);set(layer[scene_title_display].html, get(scene[get(xml.scene)].title));" thumburl="panos/KITCHEN.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
         
         <control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -90,7 +90,7 @@
 
     </scene>
 
-    <scene name="scene_LIVING_AREA" title="HALL" onstart="set(layer[scene_title_display].html, get(scene[get(xml.scene)].title));" thumburl="panos/LIVING_AREA.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+    <scene name="scene_LIVING_AREA" title="HALL" onstart="start_autorotate_custom(3);set(layer[scene_title_display].html, get(scene[get(xml.scene)].title));" thumburl="panos/LIVING_AREA.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
         
         <control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -112,7 +112,7 @@
 
     </scene>
 
-    <scene name="scene_MINI_KITCHEN" title="MINI KITCHEN" onstart="set(layer[scene_title_display].html, get(scene[get(xml.scene)].title));" thumburl="panos/MINI_KITCHEN.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+    <scene name="scene_MINI_KITCHEN" title="MINI KITCHEN" onstart="start_autorotate_custom(3);set(layer[scene_title_display].html, get(scene[get(xml.scene)].title));" thumburl="panos/MINI_KITCHEN.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
         
         <control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -128,7 +128,7 @@
 
     </scene>
 
-    <scene name="scene_PORCH" title="PORCH" onstart="set(layer[scene_title_display].html, get(scene[get(xml.scene)].title));" thumburl="panos/PORCH.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+    <scene name="scene_PORCH" title="PORCH" onstart="start_autorotate_custom(3);set(layer[scene_title_display].html, get(scene[get(xml.scene)].title));" thumburl="panos/PORCH.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
         
         <control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -145,7 +145,7 @@
 
     </scene>
 
-    <scene name="scene_POWDER_ROOM" title="POWDER ROOM" onstart="set(layer[scene_title_display].html, get(scene[get(xml.scene)].title));" thumburl="panos/POWDER_ROOM.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+    <scene name="scene_POWDER_ROOM" title="POWDER ROOM" onstart="start_autorotate_custom(3);set(layer[scene_title_display].html, get(scene[get(xml.scene)].title));" thumburl="panos/POWDER_ROOM.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
         
         <control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -161,7 +161,7 @@
 
     </scene>
 
-    <scene name="scene_ROOM_" title="ROOM" onstart="set(layer[scene_title_display].html, get(scene[get(xml.scene)].title));" thumburl="panos/ROOM_.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+    <scene name="scene_ROOM_" title="ROOM" onstart="start_autorotate_custom(3);set(layer[scene_title_display].html, get(scene[get(xml.scene)].title));" thumburl="panos/ROOM_.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
         
         <control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -178,7 +178,7 @@
 
     </scene>
 
-    <scene name="scene_ROOM" title="ROOM" onstart="set(layer[scene_title_display].html, get(scene[get(xml.scene)].title));" thumburl="panos/ROOM.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+    <scene name="scene_ROOM" title="ROOM" onstart="start_autorotate_custom(3);set(layer[scene_title_display].html, get(scene[get(xml.scene)].title));" thumburl="panos/ROOM.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
         
         <control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -198,7 +198,7 @@
 
     </scene>
 
-    <scene name="scene_WASHROOM_" title="WASHROOM" onstart="set(layer[scene_title_display].html, get(scene[get(xml.scene)].title));" thumburl="panos/WASHROOM_.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+    <scene name="scene_WASHROOM_" title="WASHROOM" onstart="start_autorotate_custom(3);set(layer[scene_title_display].html, get(scene[get(xml.scene)].title));" thumburl="panos/WASHROOM_.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
         
         <control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -214,7 +214,7 @@
 
     </scene>
 
-    <scene name="scene_WASHROOM" title="WASHROOM" onstart="set(layer[scene_title_display].html, get(scene[get(xml.scene)].title));" thumburl="panos/WASHROOM.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+    <scene name="scene_WASHROOM" title="WASHROOM" onstart="start_autorotate_custom(3);set(layer[scene_title_display].html, get(scene[get(xml.scene)].title));" thumburl="panos/WASHROOM.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
         
         <control bouncinglimits="calc:image.cube ? true : false" />
 

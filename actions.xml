@@ -180,7 +180,14 @@
 		set(autorotate.enabled, false);
 		autorotate_stop();
 	</action>
-	
+
+	<action name="start_autorotate_custom">
+		set(autorotate.enabled, true);
+		set(autorotate.speed, 0.8);
+		set(autorotate.waittime, %1);   <!-- %1 = passed-in wait time -->
+		set(autorotate.loop, true);
+		autorotate_start();
+	</action>	
 	
 
 	

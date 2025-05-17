@@ -7,7 +7,7 @@
 		keep="true" />
 		
 	<!--Events  -->
-	<events name="krpanoReady" onstart="start_autorotate();" />
+	<events name="krpanoReady"  onstart="start_autorotate_custom(0);" />
 	<!-- Imports -->
 	<include url="skin/settings.xml" />
 	<include url="skin/vtourskin.xml" />
