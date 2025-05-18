@@ -43,13 +43,21 @@
     onout=""
     onout.desktop="select_hs();"
     onclick2="loadscene(get(linkedscene), null, MERGE, get(skin_settings.loadscene_blend));"
-    onclick="if(name != @selected_hs,
-                select_hs(get(name));
-                looktohotspot(get(name), get(view.fov));
-                ,
+
+
+    onclick="if(device.mobile,
                 set(enabled, false);
-                select_hs();
-                onclick2());"
+                onclick2();
+            ,
+                if(name != @selected_hs,
+                    select_hs(get(name));
+                    looktohotspot(get(name), get(view.fov));
+                ,
+                    set(enabled, false);
+                    select_hs();
+                    onclick2();
+                );
+            );"
     onclick.desktop="set(enabled, false); onclick2();"/>
 
     
