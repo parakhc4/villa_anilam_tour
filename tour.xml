@@ -5,6 +5,10 @@
 		preload="true"
 		rootpath=""
 		keep="true" />
+	<contextmenu>
+			<item name="CompanyName" caption="Developed by KGMediaWorks" enabled="true" onclick="openurl('https://www.instagram.com/kgmediaworksindia/',_blank);" />
+			<item name="separator1" separator="true" />
+	</contextmenu>	
 		
 	<!--Events  -->
 	<events name="krpanoReady"  onstart="start_autorotate_custom(0);" />
@@ -15,4 +19,9 @@
 	<include url="layers.xml"/>
 	<include url="actions.xml"/>
 	<include url="plugins/circle_hotspots.xml"/>
+	<skin_settings 
+    contextmenu_enabled="true"
+    contextmenu_customitems="true"
+/>
+
 </krpano>
