@@ -1,5 +1,5 @@
 <krpano>    
-    <scene name="scene_ENTRANCE" title="ENTRANCE" onstart="set(layer[scene_title_display].html, get(scene[get(xml.scene)].title));start_autorotate();" thumburl="panos/ENTRANCE.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+    <scene name="scene_ENTRANCE" title="ENTRANCE" onstart="set(layer[daynight_button].visible, false);set(layer[scene_title_display].html, get(scene[get(xml.scene)].title));start_autorotate();" thumburl="panos/ENTRANCE.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
         
         <control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -34,7 +34,7 @@
 
     </scene>
 
-    <scene name="scene_DINING_DAY" title="DINING" onstart="start_autorotate_custom(3);set(layer[daynight_button].visible, true)" thumburl="panos/DINING_DAY.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+    <scene name="scene_DINING_DAY" title="DINING" onstart="start_autorotate_custom(3);set(layer[daynight_button].visible, true);set(layer[scene_title_display].html, get(scene[get(xml.scene)].title));" thumburl="panos/DINING_DAY.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
         
         <control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -52,7 +52,7 @@
 
     </scene>
 
-    <scene name="scene_DINING_NIGHT" title="DINING" onstart="start_autorotate_custom(3);set(layer[daynight_button].visible, true)" thumburl="panos/DINING_NIGHT.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+    <scene name="scene_DINING_NIGHT" title="DINING" onstart="start_autorotate_custom(3);set(layer[daynight_button].visible, true);set(layer[scene_title_display].html, get(scene[get(xml.scene)].title));" thumburl="panos/DINING_NIGHT.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
         
         <control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -112,7 +112,7 @@
 
     </scene>
 
-    <scene name="scene_MINI_KITCHEN" title="MINI KITCHEN" onstart="start_autorotate_custom(3);set(layer[scene_title_display].html, get(scene[get(xml.scene)].title));" thumburl="panos/MINI_KITCHEN.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+    <scene name="scene_MINI_KITCHEN" title="MINI KITCHEN" onstart="set(layer[daynight_button].visible, false);start_autorotate_custom(3);set(layer[scene_title_display].html, get(scene[get(xml.scene)].title));" thumburl="panos/MINI_KITCHEN.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
         
         <control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -161,7 +161,7 @@
 
     </scene>
 
-    <scene name="scene_ROOM_" title="ROOM" onstart="start_autorotate_custom(3);set(layer[scene_title_display].html, get(scene[get(xml.scene)].title));" thumburl="panos/ROOM_.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+    <scene name="scene_ROOM_" title="ROOM" onstart="set(layer[daynight_button].visible, false);start_autorotate_custom(3);set(layer[scene_title_display].html, get(scene[get(xml.scene)].title));" thumburl="panos/ROOM_.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
         
         <control bouncinglimits="calc:image.cube ? true : false" />
 
