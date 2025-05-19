@@ -37,7 +37,7 @@
     <style name="hs_circle" 
     type="image"
     url="hs_circle.png"
-    scale="0.5"
+    scale="0.35"
     flying="0.03"
     onover="select_hs(get(name));"
     onout=""
@@ -107,7 +107,7 @@
 	
 		<!-- Hide circle hotspot -->	
 			set(hotspot[%1].zorder, 999999);
-            tween(hotspot[%1].scale,1,0.3,easeoutcubic);        
+            tween(hotspot[%1].scale,0.7,0.3,easeoutcubic);
             tween(hotspot[%1].alpha,1,0.3,easeoutcubic);
             delayedcall(0.2,set(hotspot[%1].zorder,0););
 		
@@ -129,7 +129,7 @@
 
 		<!-- Show circle hotspot -->	
             set(hotspot[%1].zorder, 100);
-            tween(hotspot[%1].scale,0.5,0.3,easeoutcubic);        
+            tween(hotspot[%1].scale,0.35,0.3,easeoutcubic);
             tween(hotspot[%1].alpha,1,0.3,easeoutcubic);
 			
 		<!-- Hide circle thumbnail -->	       
