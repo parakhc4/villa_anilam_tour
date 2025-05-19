@@ -165,7 +165,14 @@
 				set(layer[dropdown1separator5].visible, false);
 				set(layer[dropdown1separator6].visible, false);
 			);
-			
+	
+			<!-- Now adjust dropdown2 Y position dynamically -->
+			if(layer[dropdown1button1].visible,
+				set(layer[dropdown2].y, 570);
+			,
+				set(layer[dropdown2].y, 270);
+			);
+	
 			<!-- Expand FIRST FLOOR -->
 			set(layer[dropdown2].html, 'FIRST FLOOR ▲');
 			set(layer[dropdown2button1].visible, true);
@@ -178,6 +185,8 @@
 			set(layer[dropdown2separator4].visible, true);
 		);
 	</action>
+	
+	
 
 	<action name="start_autorotate">
 		set(autorotate.enabled, true);
