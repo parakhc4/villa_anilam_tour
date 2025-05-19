@@ -54,8 +54,8 @@
         y="10"
         width="95"
         height="30"
-        keep="true"
         handcursor="false"
+        keep="true"
         zorder="999" />
     
 
