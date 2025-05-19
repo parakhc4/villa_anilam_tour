@@ -173,6 +173,8 @@
 		set(autorotate.speed, 0.8);      <!-- adjust speed -->
 		set(autorotate.waittime, 0);      <!-- no wait, start immediately -->
 		set(autorotate.loop, true);
+		set(autorotate.usehorizontal, true);   
+		set(autorotate.yaw, 90);   
 		autorotate_start();
 	</action>
 
@@ -186,6 +188,8 @@
 		set(autorotate.speed, 0.8);
 		set(autorotate.waittime, %1);   <!-- %1 = passed-in wait time -->
 		set(autorotate.loop, true);
+		set(autorotate.usehorizontal, true);   
+		set(autorotate.yaw, 90);   
 		autorotate_start();
 	</action>	
 	
