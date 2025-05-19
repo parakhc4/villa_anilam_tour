@@ -24,6 +24,7 @@
         zorder="10001"
         keep="true"
         handcursor="false"/>
+
         <!-- Enter Button -->
     <layer name="welcome_button"
         parent="welcome_layer"
@@ -63,8 +64,11 @@
 
     <!-- The BIG 3 : Music, Menu and DayNight -->
     <!-- Menu Button -->
-    <layer name="menu_button"
-		url="%SWFPATH%/skin/button_toggle.png"
+    <!-- Container for Info + Music Buttons -->
+<!-- Container for Info + Music Buttons -->
+<!-- Container for Info + Sound buttons -->
+        <layer name="menu_button"
+        url="%SWFPATH%/skin/button_toggle.png"
         align="midleft"
         width="40"
         height="40"
@@ -75,19 +79,94 @@
         onover="tween(scale, 1.1, 0.2, easeOutCubic);"
         onout="tween(scale, 1.0, 0.2, easeOutCubic);" 
         onclick="toggle_sidebar();"/>
+        <layer name="topright_controls"
+            type="container"
+            align="topright"
+            width="64"
+            height="auto"
+            x="15"
+            y="15"
+            keep="true"
+            zorder="1000">
 
-        <!-- Music Button -->
-        <layer name="music_toggle_button"
-        url="%SWFPATH%/skin/soundonoff.png"
-        width="40"
-        height="40"
-        align="midright"         
-        onclick="toggle_music();"
-        visible="true"
-        keep="true"
-        zorder="2000"
-        onover="tween(scale, 1.1, 0.2, easeOutCubic);"
-        onout="tween(scale, 1.0, 0.2, easeOutCubic);"  />
+    <!-- Info Button -->
+            <layer name="info_button"
+                parent="topright_controls"
+                url="%SWFPATH%/skin/info.png"
+                width="32"
+                height="32"
+                align="top"
+                x="0"
+                y="40"
+                keep="true"
+                handcursor="true"
+                onclick="
+                    if(info_popup.visible,
+                        tween(layer[info_popup].alpha, 0, 0.3, easeInOutQuad);
+                        delayedcall(0.3, set(layer[info_popup].visible, false);),
+                        set(layer[info_popup].visible, true);
+                        set(layer[info_popup].alpha, 0);
+                        tween(layer[info_popup].alpha, 1, 0.3, easeInOutQuad);
+                    );"
+                onover="tween(scale, 1.1, 0.2, easeOutCubic);"
+                onout="tween(scale, 1.0, 0.2, easeOutCubic);" />
+
+
+            <!-- Sound Button -->
+            <layer name="music_toggle_button"
+                parent="topright_controls"
+                url="%SWFPATH%/skin/soundonoff.png"
+                width="32"
+                height="32"
+                align="top"
+                x="0"
+                y="0"
+                keep="true"
+                handcursor="true"
+                onclick="toggle_music();"
+                visible="true"
+                onover="tween(scale, 1.1, 0.2, easeOutCubic);"
+                onout="tween(scale, 1.0, 0.2, easeOutCubic);" />
+</layer>
+                        <!-- Info Popup Text -->
+                <layer name="info_popup"
+                type="text"
+                html="Villa Anilam is a beautifully designed independent villa located just 2km from the Central Railway Station, 4km from the Old City, and 12km from the airport. Perfect for both short and extended stays, it offers a peaceful, fully equipped retreat in the heart of the city.
+
+Enjoy the space, privacy, and comfort of a home—combined with the convenience of a hotel—at a highly competitive price. Experience a stay that’s more relaxing and personal than any hotel, only at Villa Anilam."
+                align="topright"
+                x="15"
+                y="100"
+                width="300"
+                background="true"
+                bgcolor="0x000000"
+                bgalpha="0.7"
+                border="1px solid #FFFFFF"
+                css="font-family:'Montserrat', sans-serif; font-size:14px; color:#FFFFFF;"
+                visible="false"
+                onout="
+    tween(layer[info_popup].alpha, 0, 0.3, easeInOutQuad);
+    delayedcall(0.3, set(layer[info_popup].visible, false););
+"   
+                keep="true"
+                padding="20"
+                zorder="1000" >
+                <!-- Close Button Inside Info Popup -->
+                            <layer name="info_close"
+                            parent="info_popup"
+                            url="%SWFPATH%/skin/close.png"
+                            width="12"
+                            height="12"
+                            align="topright"
+                            x="5"
+                            y="5"
+                            handcursor="true"
+                            onclick="
+                                tween(layer[info_popup].alpha, 0, 0.3, easeInOutQuad);
+                                delayedcall(0.3, set(layer[info_popup].visible, false););"
+                            onover="tween(scale, 1.2);"
+                            onout="tween(scale, 1.0);" />
+                </layer>
 
 
         <!-- Day Night -->
@@ -119,7 +198,6 @@
             enabled="false"
             visible="false"
             zorder="2000" />
-
 
         <!-- Sidebar -->
     <layer name="sidebar"
