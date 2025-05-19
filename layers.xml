@@ -46,6 +46,7 @@
         onclick="hide_welcome_layer_natural();init_flags();toggle_music();stop_autorotate();"
         keep="true"
         zorder="99999" />
+
         <!-- Logo on top of screen -->
         <layer name="logo_layer"
         url="%SWFPATH%/skin/logo_white.png"
@@ -55,6 +56,7 @@
         width="95"
         height="30"
         handcursor="false"
+        visible="false"
         keep="true"
         zorder="999" />
     
@@ -115,7 +117,7 @@
             border="none"
             keep="true"
             enabled="false"
-            visible="true"
+            visible="false"
             zorder="2000" />
 
 

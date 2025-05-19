@@ -50,8 +50,19 @@
 	<action name="hide_welcome_layer_natural">
 		tween(layer[welcome_layer].alpha, 0, 0.5, easeOutSine,
 			removelayer(welcome_layer);
+			delayedcall(0.1, 
+				set(layer[logo_layer].visible, true);
+				set(layer[logo_layer].alpha, 0);
+				tween(layer[logo_layer].alpha, 1.0, 0.5, easeInOutQuad);
+
+				set(layer[scene_title_display].enabled, true);
+				set(layer[scene_title_display].visible, true);
+				set(layer[scene_title_display].alpha, 0);
+				tween(layer[scene_title_display].alpha, 1.0, 0.5, easeInOutQuad);
+			);
 		);
 	</action>
+	
 	<!-- Toggle the sidebar -->
 	<action name="toggle_sidebar">
 		if(is_animating, null,
