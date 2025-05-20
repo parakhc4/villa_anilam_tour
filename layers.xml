@@ -84,7 +84,7 @@
             align="topright"
             width="64"
             height="auto"
-            x="15"
+            x="3"
             y="15"
             keep="true"
             zorder="1000">
@@ -131,9 +131,14 @@
                         <!-- Info Popup Text -->
                 <layer name="info_popup"
                 type="text"
-                html="Villa Anilam is a beautifully designed independent villa located just 2km from the Central Railway Station, 4km from the Old City, and 12km from the airport. Perfect for both short and extended stays, it offers a peaceful, fully equipped retreat in the heart of the city.
+html="Villa Anilam is a beautifully designed Modern 2BHK Independent villa in the heart of the city.
+&lt;br&gt;&lt;br&gt;Located&lt;br&gt;
+•⁠  ⁠2km from Railway Station&lt;br&gt;
+•⁠  ⁠12km from the Airport. &lt;br&gt;
 
-Enjoy the space, privacy, and comfort of a home—combined with the convenience of a hotel—at a highly competitive price. Experience a stay that’s more relaxing and personal than any hotel, only at Villa Anilam."
+&lt;br&gt;It is fully equipped with every amenity required for a blissfull living.
+
+&lt;br&gt;Enjoy home-like comfort with hotel-level convenience—more space, privacy and value than any hotel, only at Villa Anilam."
                 align="topright"
                 x="15"
                 y="100"
