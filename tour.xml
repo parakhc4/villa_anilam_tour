@@ -6,7 +6,7 @@
 		rootpath=""
 		keep="true" />
 	<contextmenu>
-			<item name="CompanyName" caption="Developed by KGMediaWorks" enabled="true" onclick="openurl('https://www.instagram.com/kgmediaworksindia/',_blank);" />
+			<item name="CompanyName" caption="Developed by KGMediaWorks" enabled="true" onclick="openurl('https://wa.me/919131813578',_blank);" />
 			<item name="separator1" separator="true" />
 	</contextmenu>	
 		
