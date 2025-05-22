@@ -26,7 +26,7 @@
         handcursor="false"/>
 
         <!-- Enter Button -->
-    <layer name="welcome_button"
+        <layer name="welcome_button"
         parent="welcome_layer"
         type="text"
         html="Enter"
@@ -35,18 +35,21 @@
         y="100"
         width="200"
         height="50"
-        bgcolor="0xB8860B"
-        bgalpha="1"
+        bgcolor="0x1A1A1A"
+        bgalpha="0.7"                
         roundedge="15"
-        bgshadow="2"
-        shadowcolor="0x000000"
-        shadowalpha="0.4"
-        css="font-family:'Montserrat', sans-serif; font-size:18px; font-weight:bold; color:white; text-align:center; line-height:50px;text-transform: uppercase;"
-        onover="tween(scale, 1.1);"
-        onout="tween(scale, 1.0);"
+        bgshadow="4"
+        shadowcolor="0xFFFFFF"
+        shadowalpha="0.1"
+        border="2"
+        bordercolor="0xFFFFFF"
+        css="font-family:'Montserrat', sans-serif; font-size:18px; font-weight:bold; color:white; text-align:center; line-height:50px; text-transform:uppercase;"
+        onover="tween(scale, 1.1); tween(borderalpha, 0.6);"
+        onout="tween(scale, 1.0); tween(borderalpha, 0.2);"
         onclick="hide_welcome_layer_natural();init_flags();toggle_music();stop_autorotate();"
         keep="true"
         zorder="99999" />
+    
 
         <!-- Logo on top of screen -->
         <layer name="logo_layer"
