@@ -9,7 +9,6 @@
 			<item name="CompanyName" caption="Developed by KGMediaWorks" enabled="true" onclick="openurl('https://wa.me/919131813578',_blank);" />
 			<item name="separator1" separator="true" />
 	</contextmenu>
-		
 	<!--Events  -->
 	<events name="krpanoReady"  onstart="start_autorotate_custom(0);" />
 	<!-- Imports -->

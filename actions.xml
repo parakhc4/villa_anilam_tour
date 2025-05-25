@@ -111,6 +111,7 @@
 				set(layer[dropdown2button2].visible, false);
 				set(layer[dropdown2button3].visible, false);
 				set(layer[dropdown2button4].visible, false);
+				set(layer[dropdown2separator1].visible, false);
 				set(layer[dropdown2separator2].visible, false);
 				set(layer[dropdown2separator3].visible, false);
 				set(layer[dropdown2separator4].visible, false);
@@ -130,7 +131,7 @@
 			set(layer[dropdown1separator4].visible, true);
 			set(layer[dropdown1separator5].visible, true);
 			set(layer[dropdown1separator6].visible, true);
-			set(layer[dropdown2].y, 570); <!-- Adjust based on actual height used -->
+			set(layer[dropdown2].y, 520); <!-- Adjust based on actual height used -->
 		);
 	</action>
 	
