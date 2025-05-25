@@ -141,7 +141,7 @@ html="Villa Anilam is a beautifully designed Modern 2BHK Independent villa in th
 
 &lt;br&gt;It is fully equipped with every amenity required for a blissfull living.
 
-&lt;br&gt;Enjoy home-like comfort with hotel-level convenience—more space, privacy and value than any hotel, only at Villa Anilam."
+Enjoy home-like comfort with hotel-level convenience. More space, privacy and value than any hotel, only at Villa Anilam."
                 align="topright"
                 x="15"
                 y="100"
@@ -388,7 +388,7 @@ html="Villa Anilam is a beautifully designed Modern 2BHK Independent villa in th
                         visible="false"
                         zorder="1000" />
 
-                        
+
                         <!-- ALL BUTTONS BELOW DROPDOWN 1 -->
                     <layer name="dropdown1button1"
                         parent="sidebar"
